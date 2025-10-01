@@ -1,0 +1,92 @@
+[
+  {
+    "id": "#1001",
+    "title": "Login not working",
+    "description": "User unable to log in using correct credentials. Tried password reset with no success.",
+    "customer": "Alice Johnson",
+    "priority": "High priority",
+    "status": "Open",
+    "createdAt": "28/9/2025"
+  },
+  {
+    "id": "#1002",
+    "title": "Server downtime",
+    "description": "Main website server is down. No response from API endpoints.",
+    "customer": "Michael Lee",
+    "priority": "Critical priority",
+    "status": "Open",
+    "createdAt": "29/9/2025"
+  },
+  {
+    "id": "#1003",
+    "title": "App crashes on startup",
+    "description": "Mobile app crashes immediately after launch on Android 12 devices.",
+    "customer": "Ravi Patel",
+    "priority": "High priority",
+    "status": "Open",
+    "createdAt": "30/9/2025"
+  },
+  {
+    "id": "#1004",
+    "title": "Payment failed but charged",
+    "description": "Customer was charged but the payment status shows failed in dashboard.",
+    "customer": "Emily Davis",
+    "priority": "Urgent priority",
+    "status": "Open",
+    "createdAt": "30/9/2025"
+  },
+  {
+    "id": "#1005",
+    "title": "Password reset email not received",
+    "description": "User did not receive password reset email despite multiple attempts.",
+    "customer": "Carlos Mendes",
+    "priority": "Medium priority",
+    "status": "Open",
+    "createdAt": "28/9/2025"
+  },
+  {
+    "id": "#1006",
+    "title": "UI not responsive on tablet",
+    "description": "App layout breaks on iPad, buttons overlap and text is unreadable.",
+    "customer": "Sarah O'Neill",
+    "priority": "Low priority",
+    "status": "Open",
+    "createdAt": "29/9/2025"
+  },
+  {
+    "id": "#1007",
+    "title": "Invoice generation failed",
+    "description": "System throws error when trying to generate invoice for new subscriptions.",
+    "customer": "Liam Chen",
+    "priority": "Medium priority",
+    "status": "Open",
+    "createdAt": "30/9/2025"
+  },
+  {
+    "id": "#1008",
+    "title": "Two-factor authentication issue",
+    "description": "2FA code not being accepted even though it's correct.",
+    "customer": "Nina Roberts",
+    "priority": "High priority",
+    "status": "Open",
+    "createdAt": "27/9/2025"
+  },
+  {
+    "id": "#1009",
+    "title": "Incorrect timezone displayed",
+    "description": "User's dashboard shows wrong timezone despite correct settings.",
+    "customer": "Mark Anderson",
+    "priority": "Low priority",
+    "status": "Open",
+    "createdAt": "28/9/2025"
+  },
+  {
+    "id": "#1010",
+    "title": "Can't upload profile picture",
+    "description": "Upload button is disabled or unresponsive on profile settings page.",
+    "customer": "Isabella Ruiz",
+    "priority": "Medium priority",
+    "status": "Open",
+    "createdAt": "30/9/2025"
+  }
+]
