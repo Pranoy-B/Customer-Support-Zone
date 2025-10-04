@@ -3,6 +3,7 @@ import Navbar from './components/Navbar/Navbar'
 import Banner from './components/Banner/Banner'
 import CardSection from './components/CardSection/CardSection'
 import { Suspense } from 'react'
+import { useState } from 'react'
 
 
 const fetchData = async () => {
@@ -12,15 +13,27 @@ const fetchData = async () => {
 
 const CardPromise = fetchData()
 
-function App() {
  
+
+function App() {
+  
+  const [inProgress, setInProgress] = useState(0)
+  const [resolvedCount,setResolvedCount] = useState(0)
+  const handleInProgress = (taskCard) => {
+    setInProgress(taskCard.length)
+  }
+  const handleResolved = (resolved) => {
+    setResolvedCount(resolved.length)
+  }
+
+
   return (
     <>
       <Navbar></Navbar>
 
-      <Banner></Banner>
+      <Banner inProgress={inProgress} resolvedCount={resolvedCount}></Banner>
 
-      <Suspense fallback="Loading Data....."><CardSection CardPromise={CardPromise}></CardSection></Suspense>
+      <Suspense fallback="Loading Data....."><CardSection ResolvedToParent = {handleResolved} TaskCardToParent={handleInProgress} CardPromise={CardPromise}></CardSection></Suspense>
     </>
   )
 }

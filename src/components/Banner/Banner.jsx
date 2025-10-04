@@ -1,7 +1,7 @@
 import React from "react";
 import bannerImg1 from "../../assets/vector1.png";
 
-const Banner = () => {
+const Banner = ({inProgress, resolvedCount}) => {
 
   return (
     <div className="max-w-[1280px] mx-auto flex gap-4 justify-center items-center flex-col lg:flex-row">
@@ -12,7 +12,7 @@ const Banner = () => {
 
         <div className="z-10 text-center space-y-3">
           <h1 className="text-2xl font-medium">In-Progress</h1>
-          <p className="text-5xl font-bold">0</p>
+          <p className="text-5xl font-bold">{inProgress}</p>
         </div>
       </div>
 
@@ -22,7 +22,7 @@ const Banner = () => {
         <img src={bannerImg1} alt="Banner image" className="absolute right-0 top-0 h-full object-contain scale-x-[-1]"/>
         <div className="z-10 text-white text-center space-y-3">
           <h1 className="text-2xl font-medium">Resolved</h1>
-          <p className="text-5xl font-bold">0</p>
+          <p className="text-5xl font-bold">{resolvedCount}</p>
         </div>
       </div>
     </div>
