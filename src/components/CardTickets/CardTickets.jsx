@@ -3,8 +3,12 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCalendar } from "@fortawesome/free-solid-svg-icons";
 import ToggleCardButton from "../CardButton/CardButton";
 
+
+
 const CardTickets = ({ card, TaskCard, setTaskCard, removeTickets }) => {
+
   if (removeTickets.includes(card.id)) return null;
+  
   return (
     <div className="bg-white p-3">
       <div className="flex justify-between items-center">

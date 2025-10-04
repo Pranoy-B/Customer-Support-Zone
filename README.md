@@ -1,16 +1,20 @@
-# React + Vite
+What is JSX, and why is it used?
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Ans: JSX is the short form of "JavaScript Xml". It's special kind of syntax which helps us to write Html in JavaScript. We use it in React to make the code clean, for faster performance etc.
 
-Currently, two official plugins are available:
+ - What is the difference between State and Props?
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+ Ans: Props which is short for Properties are like the arguments we pass into the function in JavaScript. It allows data to flow from parent component to child component. Props are immutable. State is a built-in object in React where we can store data. Since data can change over time, State is mutable.
 
-## React Compiler
 
-The React Compiler is not enabled on this template. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+ - What is the useState hook, and how does it work?
 
-## Expanding the ESLint configuration
+Ans: useState hood is used to add State to functional components. Whenever the useState is used, it has a default value set by the user and then based on the function it is set on or called on, everytime the UI renders or re-renders it updates the State.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+ - How can you share state between components in React?
+
+Ans: We can do that by the method called "Lifting Up the State".
+
+ - How is event handling done in React?
+
+ Ans: Event handling in React are almost as same as in Html. But there are difference the syntax. Such as in Html we use "onclick" but in React, it is "onClick". Also in React we do not call any function immediately in the event handler, We send it as a props or wrap it inside an arrow function.
