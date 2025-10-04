@@ -2,6 +2,7 @@ import './App.css'
 import Navbar from './components/Navbar/Navbar'
 import Banner from './components/Banner/Banner'
 import CardSection from './components/CardSection/CardSection'
+import { ToastContainer } from 'react-toastify';
 import { Suspense } from 'react'
 import { useState } from 'react'
 import Footer from './components/Footer/Footer'
@@ -41,7 +42,7 @@ function App() {
       <div className="footer sm:footer-horizontal bg-neutral flex justify-center items-center text-white p-10">
         <h4 className='text-center'>© 2025 CS — Ticket System. All rights reserved.</h4>
       </div>
-    
+    <ToastContainer/>
     </>
   )
 }

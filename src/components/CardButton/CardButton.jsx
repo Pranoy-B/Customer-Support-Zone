@@ -1,13 +1,16 @@
 import React, { useState } from "react";
+import { toast } from "react-toastify";
 
 const ToggleCardButton = ({card, TaskCard, setTaskCard}) => {
   const [clicked, setClicked] = useState(true);
   const [disabled,setDisabled] = useState(false)
   const handleClick = () => {
+    
     setClicked(!clicked);
     setDisabled(true)
     setTaskCard([...TaskCard, card])
-
+    toast("Task in Progress")
+   
   };
   return (
     <button

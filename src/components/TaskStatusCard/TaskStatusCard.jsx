@@ -1,8 +1,10 @@
 import React from 'react';
+import { toast } from 'react-toastify';
 
 const TaskStatusCard = ({TaskCard,resolved,setResolved, removeCardTickets, setRemoveTickets}) => {
     const handleResolve = (rsCard) =>{
             setResolved([...resolved, rsCard])
+            toast("Task Resolved")
         }
     const handleRemove = (stCard) => {
         removeCardTickets(stCard)
