@@ -4,6 +4,8 @@ import Banner from './components/Banner/Banner'
 import CardSection from './components/CardSection/CardSection'
 import { Suspense } from 'react'
 import { useState } from 'react'
+import Footer from './components/Footer/Footer'
+ import '@fortawesome/fontawesome-free/css/all.min.css';
 
 
 const fetchData = async () => {
@@ -34,6 +36,12 @@ function App() {
       <Banner inProgress={inProgress} resolvedCount={resolvedCount}></Banner>
 
       <Suspense fallback="Loading Data....."><CardSection ResolvedToParent = {handleResolved} TaskCardToParent={handleInProgress} CardPromise={CardPromise}></CardSection></Suspense>
+    
+      <Footer></Footer>
+      <div className="footer sm:footer-horizontal bg-neutral flex justify-center items-center text-white p-10">
+        <h4 className='text-center'>© 2025 CS — Ticket System. All rights reserved.</h4>
+      </div>
+    
     </>
   )
 }
